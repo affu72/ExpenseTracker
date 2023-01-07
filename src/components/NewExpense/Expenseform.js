@@ -44,7 +44,7 @@ const ExpenseForm = ({ onFormSubmit, onCancel }) => {
 
     onFormSubmit({
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
       person: enteredPerson,
     });
